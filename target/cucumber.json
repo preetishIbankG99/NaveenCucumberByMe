@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Checking login credentials mapping",
+        "description": "",
+        "id": "login-data-creation;checking-login-credentials-mapping",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29498582708,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is  on loginpage",
+            "match": {
+              "location": "DataDrivenMapStepDefinitions.user_is_already_on_loginpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18643304,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Title is OrangeHRM",
+            "match": {
+              "location": "DataDrivenMapStepDefinitions.title_is_OrangeHRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25666002441,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters  valid username and valid password",
+            "match": {
+              "location": "DataDrivenMapStepDefinitions.user_enters_valid_username_and_valid_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "Adminabc",
+                  "123"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "Admindef",
+                  "456"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Adminghi",
+                  "789"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 349272786,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Closing browser",
+            "match": {
+              "location": "DataDrivenMapStepDefinitions.tear_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login data creation",
+    "description": "",
+    "id": "login-data-creation",
+    "keyword": "Feature",
+    "uri": "Features/LoginDataDrivenMap.feature"
+  }
+]

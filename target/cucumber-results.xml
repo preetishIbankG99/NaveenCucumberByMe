@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="55.532501">
+<testcase classname="Login data creation" name="Checking login credentials mapping" time="55.532501">
+<system-out><![CDATA[Given User is  on loginpage.................................................passed
+When Title is OrangeHRM.....................................................passed
+Then User enters  valid username and valid password.........................passed
+Then Closing browser........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,74 @@
+[
+  {
+    "source": "^Title is OrangeHRM$",
+    "steps": [
+      {
+        "name": "Title is OrangeHRM",
+        "aggregatedDurations": {
+          "average": 0.018643304,
+          "median": 0.018643304
+        },
+        "durations": [
+          {
+            "duration": 0.018643304,
+            "location": "Features/LoginDataDrivenMap.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Closing browser$",
+    "steps": [
+      {
+        "name": "Closing browser",
+        "aggregatedDurations": {
+          "average": 0.349272786,
+          "median": 0.349272786
+        },
+        "durations": [
+          {
+            "duration": 0.349272786,
+            "location": "Features/LoginDataDrivenMap.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User is  on loginpage$",
+    "steps": [
+      {
+        "name": "User is  on loginpage",
+        "aggregatedDurations": {
+          "average": 29.498582708,
+          "median": 29.498582708
+        },
+        "durations": [
+          {
+            "duration": 29.498582708,
+            "location": "Features/LoginDataDrivenMap.feature:3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User enters  valid username and valid password$",
+    "steps": [
+      {
+        "name": "User enters  valid username and valid password",
+        "aggregatedDurations": {
+          "average": 25.666002441,
+          "median": 25.666002441
+        },
+        "durations": [
+          {
+            "duration": 25.666002441,
+            "location": "Features/LoginDataDrivenMap.feature:5"
+          }
+        ]
+      }
+    ]
+  }
+]
