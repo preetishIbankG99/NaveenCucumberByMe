@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="55.532501">
-<testcase classname="Login data creation" name="Checking login credentials mapping" time="55.532501">
-<system-out><![CDATA[Given User is  on loginpage.................................................passed
-When Title is OrangeHRM.....................................................passed
-Then User enters  valid username and valid password.........................passed
-Then Closing browser........................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="89.474586">
+<testcase classname="Free orangehrm application testing" name="Login with correct username and correct password" time="49.23883">
+<system-out><![CDATA[Given This is valid logintest...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free orangehrm application testing" name="Login with incorrect username and incorrect password" time="40.235606">
+<system-out><![CDATA[Given This is invalid logintest.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free orangehrm application testing" name="Create user" time="0.00005">
+<system-out><![CDATA[Given This is new usertestcase..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free orangehrm application testing" name="Create deals" time="0.000045">
+<system-out><![CDATA[Given This is new dealtestcase..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free orangehrm application testing" name="Create task" time="0.000055">
+<system-out><![CDATA[Given This is new taskrtestcase.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

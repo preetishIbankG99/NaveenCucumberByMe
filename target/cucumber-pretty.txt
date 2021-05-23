@@ -1,7 +1,21 @@
-Feature: Login data creation
+Feature: Free orangehrm application testing
 
-  Scenario: Checking login credentials mapping          # Features/LoginDataDrivenMap.feature:2
-    Given User is  on loginpage                         # DataDrivenMapStepDefinitions.user_is_already_on_loginpage()
-    When Title is OrangeHRM                             # DataDrivenMapStepDefinitions.title_is_OrangeHRM()
-    Then User enters  valid username and valid password # DataDrivenMapStepDefinitions.user_enters_valid_username_and_valid_password(DataTable)
-    Then Closing browser                                # DataDrivenMapStepDefinitions.tear_browser()
+  @Smoke
+  Scenario: Login with correct username and correct password # Features/CucumberTags.feature:3
+    Given This is valid logintest                            # CucumberTagsDefinitions.this_is_valid_logintest()
+
+  @Regression
+  Scenario: Login with incorrect username and incorrect password # Features/CucumberTags.feature:6
+    Given This is invalid logintest                              # CucumberTagsDefinitions.this_is_invalid_logintest()
+
+  @Smoke
+  Scenario: Create user            # Features/CucumberTags.feature:9
+    Given This is new usertestcase # CucumberTagsDefinitions.this_is_new_usertestcase()
+
+  @Smoke @Regression
+  Scenario: Create deals           # Features/CucumberTags.feature:12
+    Given This is new dealtestcase # CucumberTagsDefinitions.this_is_new_dealtestcase()
+
+  @Regression
+  Scenario: Create task             # Features/CucumberTags.feature:15
+    Given This is new taskrtestcase # CucumberTagsDefinitions.this_is_new_taskrtestcase()

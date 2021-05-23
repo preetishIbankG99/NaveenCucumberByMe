@@ -1,71 +1,89 @@
 [
   {
-    "source": "^Title is OrangeHRM$",
+    "source": "^This is invalid logintest$",
     "steps": [
       {
-        "name": "Title is OrangeHRM",
+        "name": "This is invalid logintest",
         "aggregatedDurations": {
-          "average": 0.018643304,
-          "median": 0.018643304
+          "average": 40.235605513,
+          "median": 40.235605513
         },
         "durations": [
           {
-            "duration": 0.018643304,
-            "location": "Features/LoginDataDrivenMap.feature:4"
+            "duration": 40.235605513,
+            "location": "Features/CucumberTags.feature:7"
           }
         ]
       }
     ]
   },
   {
-    "source": "^Closing browser$",
+    "source": "^This is new taskrtestcase$",
     "steps": [
       {
-        "name": "Closing browser",
+        "name": "This is new taskrtestcase",
         "aggregatedDurations": {
-          "average": 0.349272786,
-          "median": 0.349272786
+          "average": 0.000054799,
+          "median": 0.000054799
         },
         "durations": [
           {
-            "duration": 0.349272786,
-            "location": "Features/LoginDataDrivenMap.feature:10"
+            "duration": 0.000054799,
+            "location": "Features/CucumberTags.feature:16"
           }
         ]
       }
     ]
   },
   {
-    "source": "^User is  on loginpage$",
+    "source": "^This is new usertestcase$",
     "steps": [
       {
-        "name": "User is  on loginpage",
+        "name": "This is new usertestcase",
         "aggregatedDurations": {
-          "average": 29.498582708,
-          "median": 29.498582708
+          "average": 0.00005027,
+          "median": 0.00005027
         },
         "durations": [
           {
-            "duration": 29.498582708,
-            "location": "Features/LoginDataDrivenMap.feature:3"
+            "duration": 0.00005027,
+            "location": "Features/CucumberTags.feature:10"
           }
         ]
       }
     ]
   },
   {
-    "source": "^User enters  valid username and valid password$",
+    "source": "^This is valid logintest$",
     "steps": [
       {
-        "name": "User enters  valid username and valid password",
+        "name": "This is valid logintest",
         "aggregatedDurations": {
-          "average": 25.666002441,
-          "median": 25.666002441
+          "average": 49.238830027,
+          "median": 49.238830027
         },
         "durations": [
           {
-            "duration": 25.666002441,
-            "location": "Features/LoginDataDrivenMap.feature:5"
+            "duration": 49.238830027,
+            "location": "Features/CucumberTags.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^This is new dealtestcase$",
+    "steps": [
+      {
+        "name": "This is new dealtestcase",
+        "aggregatedDurations": {
+          "average": 0.000045288,
+          "median": 0.000045288
+        },
+        "durations": [
+          {
+            "duration": 0.000045288,
+            "location": "Features/CucumberTags.feature:13"
           }
         ]
       }

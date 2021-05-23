@@ -3,98 +3,154 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
-        "name": "Checking login credentials mapping",
+        "line": 3,
+        "name": "Login with correct username and correct password",
         "description": "",
-        "id": "login-data-creation;checking-login-credentials-mapping",
+        "id": "free-orangehrm-application-testing;login-with-correct-username-and-correct-password",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 29498582708,
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "User is  on loginpage",
-            "match": {
-              "location": "DataDrivenMapStepDefinitions.user_is_already_on_loginpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 18643304,
+              "duration": 49238830027,
               "status": "passed"
             },
             "line": 4,
-            "name": "Title is OrangeHRM",
+            "name": "This is valid logintest",
             "match": {
-              "location": "DataDrivenMapStepDefinitions.title_is_OrangeHRM()"
+              "location": "CucumberTagsDefinitions.this_is_valid_logintest()"
             },
-            "keyword": "When "
-          },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Login with incorrect username and incorrect password",
+        "description": "",
+        "id": "free-orangehrm-application-testing;login-with-incorrect-username-and-incorrect-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 25666002441,
+              "duration": 40235605513,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User enters  valid username and valid password",
+            "line": 7,
+            "name": "This is invalid logintest",
             "match": {
-              "location": "DataDrivenMapStepDefinitions.user_enters_valid_username_and_valid_password(DataTable)"
+              "location": "CucumberTagsDefinitions.this_is_invalid_logintest()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 6
-              },
-              {
-                "cells": [
-                  "Adminabc",
-                  "123"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "Admindef",
-                  "456"
-                ],
-                "line": 8
-              },
-              {
-                "cells": [
-                  "Adminghi",
-                  "789"
-                ],
-                "line": 9
-              }
-            ],
-            "keyword": "Then "
-          },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Create user",
+        "description": "",
+        "id": "free-orangehrm-application-testing;create-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 349272786,
+              "duration": 50270,
               "status": "passed"
             },
             "line": 10,
-            "name": "Closing browser",
+            "name": "This is new usertestcase",
             "match": {
-              "location": "DataDrivenMapStepDefinitions.tear_browser()"
+              "location": "CucumberTagsDefinitions.this_is_new_usertestcase()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Create deals",
+        "description": "",
+        "id": "free-orangehrm-application-testing;create-deals",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 45288,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "This is new dealtestcase",
+            "match": {
+              "location": "CucumberTagsDefinitions.this_is_new_dealtestcase()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Smoke"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Create task",
+        "description": "",
+        "id": "free-orangehrm-application-testing;create-task",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54799,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "This is new taskrtestcase",
+            "match": {
+              "location": "CucumberTagsDefinitions.this_is_new_taskrtestcase()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@Regression"
           }
         ]
       }
     ],
-    "name": "Login data creation",
+    "name": "Free orangehrm application testing",
     "description": "",
-    "id": "login-data-creation",
+    "id": "free-orangehrm-application-testing",
     "keyword": "Feature",
-    "uri": "Features/LoginDataDrivenMap.feature"
+    "uri": "Features/CucumberTags.feature"
   }
 ]

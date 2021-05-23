@@ -1,95 +1,143 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/LoginDataDrivenMap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/CucumberTags.feature");
 formatter.feature({
   "line": 1,
-  "name": "Login data creation",
+  "name": "Free orangehrm application testing",
   "description": "",
-  "id": "login-data-creation",
+  "id": "free-orangehrm-application-testing",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 2,
-  "name": "Checking login credentials mapping",
-  "description": "",
-  "id": "login-data-creation;checking-login-credentials-mapping",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
   "line": 3,
-  "name": "User is  on loginpage",
-  "keyword": "Given "
+  "name": "Login with correct username and correct password",
+  "description": "",
+  "id": "free-orangehrm-application-testing;login-with-correct-username-and-correct-password",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@Smoke"
+    }
+  ]
 });
 formatter.step({
   "line": 4,
-  "name": "Title is OrangeHRM",
-  "keyword": "When "
+  "name": "This is valid logintest",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTagsDefinitions.this_is_valid_logintest()"
+});
+formatter.result({
+  "duration": 49238830027,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 6,
+  "name": "Login with incorrect username and incorrect password",
+  "description": "",
+  "id": "free-orangehrm-application-testing;login-with-incorrect-username-and-incorrect-password",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 5,
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
-  "name": "User enters  valid username and valid password",
-  "rows": [
+  "line": 7,
+  "name": "This is invalid logintest",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CucumberTagsDefinitions.this_is_invalid_logintest()"
+});
+formatter.result({
+  "duration": 40235605513,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "Create user",
+  "description": "",
+  "id": "free-orangehrm-application-testing;create-user",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 6
-    },
-    {
-      "cells": [
-        "Adminabc",
-        "123"
-      ],
-      "line": 7
-    },
-    {
-      "cells": [
-        "Admindef",
-        "456"
-      ],
-      "line": 8
-    },
-    {
-      "cells": [
-        "Adminghi",
-        "789"
-      ],
-      "line": 9
+      "line": 8,
+      "name": "@Smoke"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
   "line": 10,
-  "name": "Closing browser",
-  "keyword": "Then "
+  "name": "This is new usertestcase",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DataDrivenMapStepDefinitions.user_is_already_on_loginpage()"
+  "location": "CucumberTagsDefinitions.this_is_new_usertestcase()"
 });
 formatter.result({
-  "duration": 29498582708,
+  "duration": 50270,
   "status": "passed"
 });
+formatter.scenario({
+  "line": 12,
+  "name": "Create deals",
+  "description": "",
+  "id": "free-orangehrm-application-testing;create-deals",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@Smoke"
+    },
+    {
+      "line": 11,
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "This is new dealtestcase",
+  "keyword": "Given "
+});
 formatter.match({
-  "location": "DataDrivenMapStepDefinitions.title_is_OrangeHRM()"
+  "location": "CucumberTagsDefinitions.this_is_new_dealtestcase()"
 });
 formatter.result({
-  "duration": 18643304,
+  "duration": 45288,
   "status": "passed"
 });
+formatter.scenario({
+  "line": 15,
+  "name": "Create task",
+  "description": "",
+  "id": "free-orangehrm-application-testing;create-task",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 14,
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.step({
+  "line": 16,
+  "name": "This is new taskrtestcase",
+  "keyword": "Given "
+});
 formatter.match({
-  "location": "DataDrivenMapStepDefinitions.user_enters_valid_username_and_valid_password(DataTable)"
+  "location": "CucumberTagsDefinitions.this_is_new_taskrtestcase()"
 });
 formatter.result({
-  "duration": 25666002441,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DataDrivenMapStepDefinitions.tear_browser()"
-});
-formatter.result({
-  "duration": 349272786,
+  "duration": 54799,
   "status": "passed"
 });
 });
